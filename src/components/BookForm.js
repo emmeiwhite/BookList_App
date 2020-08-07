@@ -3,12 +3,17 @@ import { BookContext } from '../context/BookContext'
 
 // Controlled Component without class
 export default function BookForm() {
-  const { addBook } = useContext(BookContext)
+  const { dispatch } = useContext(BookContext)
   const [title, setTitle] = useState('')
   const [author, setAuthor] = useState('')
   const handleSubmit = (e) => {
     e.preventDefault();
-    addBook(title, author);
+    dispatch({
+      type: 'ADD_BOOK', book: {
+        title,
+        author
+      }
+    });
     setTitle('')
     setAuthor('')
   }
