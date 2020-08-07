@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(206, 48, 206);
+}
+
+.navbar,.booklist,.bookform{
+  max-width:1200px;
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+  background-color: purple;
+  color:#fff;
+}
+
+.booklist{
+  margin-top: 1rem;
+  background-color: transparent;
+}
+.booklist ul{
+  list-style:none;
+  padding:0;
+}
+
+.booklist ul li{
+  padding:1rem 0.5rem;
+  background-color: rgb(180, 77, 52);
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.booklist ul li:hover{
+  text-decoration: line-through;
+}
+
+.title{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.author{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+input[type="text"]{
+  display:block;
+  width:100%;
+  padding: 1rem 0.5rem;
+  border:1px solid rgb(180, 77, 52);
+  text-align: center;
+  outline:none;
+  background:transparent;
+  color:#fff;
+  margin:0.5rem 0;
+}
+
+button[type="submit"]{
+  width:50%;
+  background-color: blueviolet;
+  color:#fff;
+  border:none;
+  padding:0.5rem 1rem;
+
+}
